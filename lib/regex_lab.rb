@@ -23,4 +23,5 @@ end
 
 def valid_phone_number?(phone)
   !!(phone =~ /^\d{10}/)
+  binding.pry
 end
