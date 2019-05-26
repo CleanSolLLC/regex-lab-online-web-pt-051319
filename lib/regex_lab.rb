@@ -19,11 +19,8 @@ end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
 
-  if text.scan(/\b[A-Z] && [.]/)
-    return true
-  elsif text.scan(/\b[a-z] && [.]/)
-    return false
-  end
+  text.match?(/\b[A-Z]/./)
+  binding.pry
 end
 
 def valid_phone_number?(phone)
